@@ -15,4 +15,5 @@ module "demo_workspace" {
   common_tags           = local.common_tags
   create_metastore      = true
   metastore_owner       = "Admins"
+  subnet_cidrs          = ["172.31.1.0/24", "172.31.2.0/24", "172.31.3.0/24"]
 }
