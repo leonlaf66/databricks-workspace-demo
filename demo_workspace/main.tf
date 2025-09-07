@@ -8,7 +8,7 @@ locals {
 }
 
 module "demo_workspace" {
-  source = "git::ssh://git@github.com/leonlaf66/databricks_workspace_tf_module.git?ref=main"
+  source = "git::https://github.com/leonlaf66/databricks_workspace_tf_module.git?ref=main"
   databricks_account_id = local.databricks_account_id
   workspace_name        = "demo-workspace"
   aws_region            = "us-east-1"
