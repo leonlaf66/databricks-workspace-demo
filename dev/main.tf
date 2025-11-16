@@ -16,6 +16,6 @@ module "demo_workspace" {
   aws_region            = "us-east-1"
   common_tags           = local.common_tags
   create_metastore      = true
-  metastore_owner       = "dbx-demo"
+  metastore_owner       = "dbx_admins"
   subnet_cidrs          = ["172.31.96.0/24", "172.31.97.0/24", "172.31.98.0/24"]
 }
