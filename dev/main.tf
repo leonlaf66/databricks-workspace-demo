@@ -10,7 +10,7 @@ module "demo_workspace" {
   providers = {
     databricks = databricks.accounts
   }
-  source = "git::https://github.com/leonlaf66/databricks_workspace_tf_module.git?ref=init"
+  source = "git::https://github.com/leonlaf66/databricks_workspace_tf_module.git?ref=v1.1"
   databricks_account_id = var.databricks_account_id
   workspace_name        = "dbx-demo"
   aws_region            = "us-east-1"
