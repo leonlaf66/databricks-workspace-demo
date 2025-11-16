@@ -5,5 +5,5 @@ provider "aws" {
 provider "databricks" {
   alias = "accounts"
   host       = "https://accounts.cloud.databricks.com"
-  account_id = local.databricks_account_id
+  account_id = var.var.databricks_account_id
 }
